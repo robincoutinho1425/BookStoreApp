@@ -66,10 +66,7 @@ function freebook() {
         <div>
           <h1 className="pb-2 text-xl font-semibold">Free Offered Courses</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
-            laborum deleniti similique obcaecati, qui ea excepturi animi sint
-            magnam quod neque, nam molestias illum vero numquam harum sequi
-            sunt! Reiciendis.
+          Explore our Free Books section and dive into a world of stories without spending a dime! Discover a curated collection of free eBooks across various genres. Start reading and enjoy unlimited access to knowledge and entertainment at no cost!
           </p>
         </div>
 

@@ -25,10 +25,11 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Signup Successfully");
+          
           navigate(from, { replace: true });
           window.location.reload();
           // alert("Signup Successful");
+          toast.success("Signup Successfully");
         }
         localStorage.setItem("Users", JSON.stringify(res.data.user));
       })
@@ -63,7 +64,7 @@ function Signup() {
                 <input
                   type="text"
                   placeholder="Enter your fullname"
-                  className="px-3 py-1 rounded-md outline-none w-80"
+                  className="px-3 py-1 border rounded-md outline-none w-80"
                   {...register("fullname", { required: true })}
                 />
                 <br />
@@ -80,7 +81,7 @@ function Signup() {
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="px-3 py-1 rounded-md outline-none w-80"
+                  className="px-3 py-1 border rounded-md outline-none w-80"
                   {...register("email", { required: true })}
                 />
                 <br />
@@ -97,7 +98,7 @@ function Signup() {
                 <input
                   type="text"
                   placeholder="Enter your password"
-                  className="px-3 py-1 rounded-md outline-none w-80"
+                  className="px-3 py-1 border rounded-md outline-none w-80"
                   {...register("password", { required: true })}
                 />
                 <br />

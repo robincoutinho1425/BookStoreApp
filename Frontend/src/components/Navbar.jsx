@@ -3,6 +3,7 @@ import { useState } from "react";
 import Login from "./Login";
 import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
+import { Link } from "react-router-dom";
 
 function navbar() {
   const [authUser,setAuthUser]=useAuth();
@@ -43,16 +44,16 @@ function navbar() {
   const navItems = (
     <>
       <li>
-        <a href="/">Home</a>
+        <a className="text-lg" href="/">Home</a>
       </li>
       <li>
-        <a href="/course">Course</a>
+        <a className="text-lg" href="/course">Course</a>
       </li>
       <li>
-        <a href="/contact">Contact</a>
+        <a className="text-lg" href="/contact">Contact</a>
       </li>
       <li>
-        <a>About</a>
+        <a className="text-lg">About</a>
       </li>
     </>
   );
@@ -95,7 +96,7 @@ function navbar() {
                 {navItems}
               </ul>
             </div>
-            <a className="text-2xl font-bold cursor-pointer ">BOOKSTORE</a>
+            <Link to="/" className="text-2xl font-bold cursor-pointer ">BOOKSTORE</Link>
           </div>
           <div className="space-x-3 navbar-end">
             <div className="hidden navbar-center lg:flex">
@@ -151,8 +152,8 @@ function navbar() {
 
           {
             authUser?<Logout/>:
-            <div>
-              <a className="px-3 py-2 text-white duration-300 bg-black rounded-md cursor-pointer hover:bg-slate-800"
+            <div className="hover:scale-105">
+              <a className="px-3 py-2 text-white duration-300 bg-black rounded-md cursor-pointer hover:bg-black "
               onClick={()=>document.getElementById("my_modal_3").showModal()}
               >
                 

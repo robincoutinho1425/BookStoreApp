@@ -34,7 +34,7 @@ function Login() {
         if (err.response) {
           if (err.response) {
             console.log(err);
-            toast.error("Error: " + err.response.data.message);
+            toast.error("Error: " + err.response.data.message.JSON.stringify);
             setTimeout(() => {}, 2000);
           }
         }
@@ -42,14 +42,14 @@ function Login() {
   };
 
   return (
-    <div>
-      <dialog id="my_modal_3" className="modal">
+    <div className="dark:bg-slate-900 dark:text-white">
+      <dialog id="my_modal_3" className="modal dark:bg-slate-900 dark:text-white">
         <div className="modal-box">
-          <form onSubmit={handleSubmit(onSubmit)} method="dialog">
+          <form onSubmit={handleSubmit(onSubmit)} method="dialog" className="dark:bg-slate-900 dark:text-white">
             {/* if there is a button in form, it will close the modal */}
             <Link
               to="/"
-              className="absolute btn btn-sm btn-circle btn-ghost right-2 top-2"
+              className="absolute btn btn-sm btn-circle btn-ghost right-2 top-2 dark:bg-slate-900 dark:text-white"
               onClick={() => document.getElementById("my_modal_3").close()}
             >
               ✕
@@ -63,7 +63,7 @@ function Login() {
               <input
                 type="email"
                 placeholder="Enter your email"
-                className="px-3 py-1 rounded-md outline-none w-80"
+                className="px-3 py-1 border rounded-md outline-none w-80"
                 {...register("email", { required: true })}
               />
               <br />
@@ -80,7 +80,7 @@ function Login() {
               <input
                 type="password"
                 placeholder="Enter your password"
-                className="px-3 py-1 rounded-md outline-none w-80"
+                className="px-3 py-1 border rounded-md outline-none w-80"
                 {...register("password", { required: true })}
               />
               <br />

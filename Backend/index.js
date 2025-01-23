@@ -5,6 +5,7 @@ import cors from "cors";
 
 import bookRoute from "./route/book.route.js";
 import userRoute from "./route/user.route.js"
+import connectDB from "./config/db.js";
 
 const app = express();
 
@@ -17,19 +18,7 @@ const PORT=process.env.PORT || 4000;
 const URI=process.env.MongoDB_URI;
 
 // connect to MongoDB
-try {
-    mongoose.connect(URI,{
-        useNewUrlParser:true,
-        useUnifiedTopology: true
-    });
-    console.log("Connected to MongoDb");
-    
-    
-} catch (error) {
-    console.log("Error: " , error);
-    
-    
-}
+connectDB();
 
 // Defining Routes
 app.use("/book",bookRoute);

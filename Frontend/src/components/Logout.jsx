@@ -26,7 +26,7 @@ function Logout() {
   return (
     <div>
       <button
-        className="px-3 py-2 text-white bg-red-500 rounded-md cursor-pointer"
+        className="px-3 py-2 text-white bg-red-500 rounded-md cursor-pointer hover:scale-105"
         onClick={handleSubmit}
       >
         Logout

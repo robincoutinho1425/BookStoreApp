@@ -28,12 +28,7 @@ function Course() {
             <span className="text-pink-500">Here! :)</span>
           </h1>
           <p className="mt-12 text-xl">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Repellendus similique saepe sint maxime placeat, iure et suscipit
-            fugit dignissimos qui beatae non rerum optio a porro nisi illum,
-            impedit, error nesciunt. Distinctio tempora eos, ullam perferendis
-            inventore possimus repellat dicta quidem ipsam quo, id velit, at
-            totam beatae. Impedit, voluptatum?
+          Browse through our Premium Books section to discover a wide range of captivating reads. From international bestsellers to hidden gems, explore books that cater to every interest and genre. With detailed descriptions and easy access, finding your next favorite book has never been easier. Unlock exclusive, high-quality content and elevate your reading experience today!
           </p>
           <Link to="/">
             <button className="w-20 px-4 py-2 mt-6 text-xl text-white duration-300 bg-pink-500 rounded-md hover:bg-pink-700">

@@ -24,7 +24,7 @@ function Contact() {
               <input
                 type="text"
                 placeholder="Enter your Fullname"
-                className="px-3 py-1 rounded-md outline-none w-80"
+                className="px-3 py-1 border rounded-md outline-none w-80"
               />
             </div>
             {/* EMAIL */}
@@ -34,7 +34,7 @@ function Contact() {
               <input
                 type="email"
                 placeholder="Enter your Email"
-                className="px-3 py-1 rounded-md outline-none w-80"
+                className="px-3 py-1 border rounded-md outline-none w-80"
               />
             </div>
 
@@ -45,7 +45,7 @@ function Contact() {
               <textarea
                 type='text'
                 placeholder="Type your message"
-                className="h-32 px-3 py-1 rounded-md outline-none w-80"
+                className="h-32 px-3 py-1 border rounded-md outline-none w-80"
               />
             </div>
 
