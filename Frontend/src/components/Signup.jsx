@@ -26,7 +26,7 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Signup Successfully robin");
+          toast.success("Signup Successfully");
           navigate(from, { replace: true });
         setTimeout(() => {
           
@@ -104,7 +104,7 @@ function Signup() {
                 <span>Password</span>
                 <br />
                 <input
-                  type="text"
+                  type="password"
                   placeholder="Enter your password"
                   className="px-3 py-1 border rounded-md outline-none w-80"
                   {...register("password", { required: true })}
