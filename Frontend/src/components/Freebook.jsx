@@ -71,7 +71,7 @@ function freebook() {
           </p>
         </div>
 
-        <div >
+        <div className="overflow-hidden">
           <Slider {...settings}>
           {book.map((item)=>(
             <Cards item={item} key={item.id}/>
