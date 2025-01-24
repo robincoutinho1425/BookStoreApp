@@ -26,7 +26,7 @@ function Signup() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          toast.success("Signup Successfully");
+          toast.success("Signup Successfully robin");
           navigate(from, { replace: true });
         setTimeout(() => {
           
